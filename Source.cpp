@@ -5,6 +5,7 @@
 // Keys to add: None
 
 // Clean up code
+// initialise numpad and F keys using loop
 
 // Future features	
 // Make it send all the information to a server I set up, possibly every 5 minutes or so
