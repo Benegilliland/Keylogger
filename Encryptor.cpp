@@ -5,9 +5,7 @@
 
 char get_key();
 int encrypt_char(char& val, char ckey);
-//int decrypt_char(char& val, char ckey);
 int encrypt_string(std::string& val, char ckey);
-//int decrypt_string(std::string& val, char ckey);
 
 char get_key() {
 	srand(time(0)); // Generate random seed
@@ -23,14 +21,6 @@ int encrypt_char(char& val, char ckey) {
 	return 0;
 }
 
-/*int decrypt_char(char& val, char ckey) {
-	val -= 5;
-	val ^= ckey;
-	val = ~val;
-	val >> 4;
-	return 0;
-}*/
-
 int encrypt_string(std::string& val, char ckey) {
 	for (int i = 0; i < val.length(); i++) {
 		char c = val[i];
@@ -39,12 +29,3 @@ int encrypt_string(std::string& val, char ckey) {
 	}
 	return 0;
 }
-
-/*int decrypt_string(std::string& val, char ckey) {
-	for (int i = 0; i < val.length(); i++) {
-		char c = val[i];
-		decrypt_char(c, ckey);
-		val[i] = c;
-	}
-	return 0;
-}*/
